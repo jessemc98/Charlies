@@ -1,0 +1,22 @@
+{
+  "name": "Charlie's Tavern",
+  "authors": [
+    "Jesse McIntosh <jessemc98@hotmail.com>"
+  ],
+  "description": "my first gulp build",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "skeleton": "^2.0.4"
+  }
+}
