@@ -1,0 +1,98 @@
+footer.container{
+	background-color: #888;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/* Hides the footer-nav on mobile (< 550px) */
+#footer-nav {
+	display: none;
+}
+
+/* Styles footer-nav on devices > 550px */
+@media (min-width: 550px) {
+	#footer-nav {
+		display: block;
+		max-width: 300px;
+		margin: auto;
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			padding-top: 20px;
+			margin: 0;
+
+			& :first-child {
+				border: 0;
+			}
+		}
+
+		li {
+			display: block;
+			text-align: center;
+			padding: 0;
+			border-left: 1px solid white;
+			margin-left: 0;
+			
+			&:hover {
+				background-color: white;
+			}
+
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+#footer-contact {
+
+	max-width: 400px;
+	margin: auto;
+
+	div {
+		text-align: center;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	
+	div.row {
+		/* styles contact number */
+		& :first-child {
+			font-size: 1.5em;
+			line-height: 1.2em;
+			color: white;
+
+			&:hover {
+				color: black;
+			}
+		}
+
+		/* styles follow on facebook div */
+		& :last-child {
+			font-size: 1.9em;
+			line-height: 0.9em;
+			color: white;
+			margin-bottom: 30px;
+
+			&:hover {
+				color: black;
+			}
+		}
+	}
+}
+
+#footer-copyright {
+	background-color: white;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 10px 0;
+    text-align: center;
+    font-size: 0.5em;
+}
