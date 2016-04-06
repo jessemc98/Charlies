@@ -1,36 +1,136 @@
 /* Main Navigation Bar */
 nav {
+	display: block;
+	background-color: $primary-light;
+	padding: 1em;
+	clear: both;
+	position: relative;
+	margin-bottom: 2em;
+	box-shadow: 0px 4px 6px $black;
 
-	ul {
-		list-style-type: none;
-		background-color: grey;
-		padding: 0;
+	img {
+		display: inline-block;
 		overflow: hidden;
+		padding: 1em 1em;
+		
+		background-color: white;
+		border: 1px solid $black;
+		box-shadow: 3px 4px 6px $black;
 	}
 
-	ul li {
-		float: left;
-		margin: 0;
-		&.right {
-			float: right;
+	.mob-menu {
+		display: inline-block;
+		position: relative;
+		float: right;
+		height: auto;
+		right: 0;
+		top: 11px;
+		border: 1px solid $black;
+		border-radius: 5px;
+		padding: 0.5em 0.5em;
+		box-shadow: 3px 4px 6px $black;
+		font-size: 4em;
+		color: white;
+		background-color: $primary-light;
+		text-align: center;
+
+		&:hover {
+			background-color: $primary;
+		}	
+	}
+
+	ul {
+		display: none;
+		list-style-type: none;
+		background-color: $primary-light;
+		margin-top: 1em;
+
+	}
+
+	li {
+		display: block;
+		margin-bottom: 0;
+	}
+	a {
+		display: block;
+		color: white;
+		padding: 1em 1.6em;
+		text-align: center;
+		text-decoration: none;
+		margin-bottom: 0;
+
+		&:hover {
+			background-color: $primary;
+			color: white;
+			outline: 1px solid black;
+			outline-offset: -1px;
 		}
 
-		a {
-			display: inline-block;
+		&.active {
+			background-color: $primary;
 			color: white;
-			padding: 1.4em 1.6em;
-			text-align: center;
-			text-decoration: none;
+			box-shadow: inset 0px 0px 5px $black;
+			outline: 0;
+		}
+	}
+}
+/* Styles for screen larger than tablet */
+@media (min-width: 750px) {
 
-			&.active {
-				background-color: white;
-				color: black;
+	nav {
+		padding: 0;
+		clear: none;
+		margin-bottom: 10em;
+
+		.mob-menu {
+			display: none;
+		}
+
+		ul {
+			background-color: $primary-light;
+			overflow: hidden;
+			margin-top: 0;
+		}
+
+		li {
+			float: left;
+			margin: 0;
+
+			&.right {
+				float: right;
 			}
 
-			&:hover {
-				background-color: #ddd;
-				color: black;
+			a {
+				display: inline-block;
+				color: white;
+				padding: 2.1em 1.6em;
+				text-align: center;
+				text-decoration: none;
+
+				&.active {
+					background-color: $primary;
+					color: white;
+					box-shadow: inset 0px 0px 5px $black;
+				}
+
+				&:hover {
+					background-color: $primary;
+					color: white;
+				}
 			}
+		}
+
+		img {
+			position: absolute;
+			width: 25%;
+			height: auto;
+			max-width: 13em;
+			top: 1em;
+			left: 50%;
+			padding: 30px 40px 55px 40px;
+			background: white;
+			border: 1px solid $black;
+			transform: translate(-50%)
 		}
 	}
 }
