@@ -121,6 +121,7 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', function() {
     gulp.watch('src/styles/**/*.scss', ['css']);
     gulp.watch('dist/**/*.html', ['html']);
+    gulp.watch('src/scripts/**/*.js', ['scripts'])
 });
 
 
