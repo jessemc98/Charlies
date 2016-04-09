@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="76px" height="auto" viewBox="0 0 76 auto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" filter="url(#filter-1)">
+        <g id="Group" transform="translate(6.000000, 2.000000)">
+            <path d="M-1.42108547e-14,0 L64,0 L64,64 L-1.42108547e-14,64 L-1.42108547e-14,0 Z M64,64 L-1.42108547e-14,64 L32,32 L64,64 Z" id="Combined-Shape" fill="#A30303"></path>
+            <path d="M39.5740857,4.91799648 C40.1131901,6.19210862 40.3827383,7.13588124 40.3827383,7.74934264 C40.3827383,8.17404668 40.2692443,8.5043671 40.042253,8.74031379 L27.1463714,20.2780494 L40.6381023,32.6651888 C40.2408674,34.647141 39.8294518,35.6381023 39.403843,35.6381023 C39.2903473,35.6381023 39.1768534,35.5673193 39.0633577,35.4257513 L24.2096855,21.5521552 C24.1245638,20.9386938 24.0820035,20.4668074 24.0820035,20.1364821 C24.0820035,19.6645887 24.167124,19.3814569 24.3373675,19.2870782 L39.5740857,4.91799648 Z" id="&lt;" fill="#FFFFFF" transform="translate(32.360053, 20.278049) rotate(-270.000000) translate(-32.360053, -20.278049) "></path>
+        </g>
+    </g>
+</svg>

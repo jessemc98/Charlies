@@ -3,12 +3,14 @@ nav {
 	display: block;
 	background-color: $primary-light;
 	padding: 1em;
+	padding-bottom: 0;
 	clear: both;
 	position: relative;
 	margin-bottom: 2em;
 	box-shadow: 0px 4px 6px $black;
+	z-index: 2;
 
-	img {
+	#logo {
 		display: inline-block;
 		overflow: hidden;
 		padding: 1em 1em;
@@ -23,13 +25,13 @@ nav {
 		position: relative;
 		float: right;
 		height: auto;
-		right: 0;
+		right: 11px;
 		top: 11px;
 		border: 1px solid $black;
 		border-radius: 5px;
-		padding: 0.5em 0.5em;
+		padding: 0.3em 0.5em;
 		box-shadow: 3px 4px 6px $black;
-		font-size: 4em;
+		font-size: 2em;
 		color: white;
 		background-color: $primary-light;
 		text-align: center;
@@ -40,17 +42,20 @@ nav {
 	}
 
 	ul {
+		position: relative;
 		display: none;
 		list-style-type: none;
 		background-color: $primary-light;
 		margin-top: 1em;
-
+		padding-bottom: 1em;
 	}
 
 	li {
-		display: block;
-		margin-bottom: 0;
+		display: inline-block;
+		margin-bottom: 1%;
+		width: 49%;
 	}
+
 	a {
 		display: block;
 		color: white;
@@ -62,8 +67,9 @@ nav {
 		&:hover {
 			background-color: $primary;
 			color: white;
-			outline: 1px solid black;
-			outline-offset: -1px;
+			// outline: 1px solid black;
+			// outline-offset: -1px;
+			box-shadow: inset 0px 0px 5px $black;
 		}
 
 		&.active {
@@ -72,6 +78,17 @@ nav {
 			box-shadow: inset 0px 0px 5px $black;
 			outline: 0;
 		}
+	}
+
+	.close {
+		display: none;
+		position: absolute;
+		right: 11px;
+		bottom: 3px;
+		height: 75px;
+		transform: translate(0, 100%);
+		cursor: pointer;
+		z-index: 1;
 	}
 }
 /* Styles for screen larger than tablet */
@@ -87,12 +104,16 @@ nav {
 		}
 
 		ul {
+			display: block;
+			position: initial;
 			background-color: $primary-light;
 			overflow: hidden;
 			margin-top: 0;
+			padding: 0;
 		}
 
 		li {
+			width: auto;
 			float: left;
 			margin: 0;
 
@@ -114,13 +135,14 @@ nav {
 				}
 
 				&:hover {
-					background-color: $primary;
-					color: white;
+				outline: 1px solid black;
+				outline-offset: -1px;
+				box-shadow: 0;
 				}
 			}
 		}
 
-		img {
+		#logo {
 			position: absolute;
 			width: 25%;
 			height: auto;
@@ -132,5 +154,10 @@ nav {
 			border: 1px solid $black;
 			transform: translate(-50%)
 		}
+	}
+
+	.close {
+		display: none;
+		position: absolute;
 	}
 }
