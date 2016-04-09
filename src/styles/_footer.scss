@@ -65,7 +65,7 @@ footer.container{
 }
 
 #footer-contact {
-
+	padding-top: 1em;
 	max-width: 400px;
 	margin: auto;
 
@@ -79,18 +79,25 @@ footer.container{
 	div.row {
 		/* styles contact number */
 		& :first-child {
+			position: relative;
 			font-size: 1.5em;
 			line-height: 1.2em;
 			color: white;
-			margin-bottom: 30px;
 
-			&:hover {
-				text-decoration: underline;
+			& svg {
+				position: absolute;
+				margin: 10px 5px;
+				margin-bottom: 0;
+				width: 0.5em;
+				top: 0;
+				transform: translate(-130%, -45%) rotate(20deg);
+				left: 12;
 			}
 		}
 
 		/* styles follow on facebook div */
 		& :last-child {
+			position: relative;
 			font-size: 1.9em;
 			line-height: 0.9em;
 			color: white;
@@ -98,6 +105,15 @@ footer.container{
 
 			&:hover {
 				text-decoration: underline;
+			}
+
+			& svg {
+				position: absolute;
+				margin: 10px;
+				margin-bottom: 0;
+				width: 0.5em;
+				top: 0;
+				transform: translate(0, -45%);
 			}
 		}
 	}
