@@ -1,5 +1,5 @@
 footer.container{
-	background-color: #888;
+	background-color: $grey;
 	width: 100%;
 	max-width: 100%;
 	margin: 0;
@@ -14,6 +14,7 @@ footer.container{
 
 /* Styles footer-nav on devices > 550px */
 @media (min-width: 550px) {
+
 	#footer-nav {
 		display: block;
 		max-width: 300px;
@@ -24,27 +25,41 @@ footer.container{
 			padding: 0;
 			padding-top: 20px;
 			margin: 0;
+			position: relative;
 
 			& :first-child {
 				border: 0;
+				border-radius: 20px;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
 			}
+
+			& :last-child {
+				border-radius: 20px;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+
 		}
 
 		li {
 			display: block;
 			text-align: center;
-			padding: 0;
+			padding: 5px 5px;
 			border-left: 1px solid white;
 			margin-left: 0;
-			
+
 			&:hover {
-				background-color: white;
+				box-shadow: 0 1px 5px $black;
+				width: 6em;
 			}
+			transition: all 0.2s;
 
 		}
 
 		a {
 			text-decoration: none;
+			color: white;
 		}
 	}
 }
@@ -67,9 +82,10 @@ footer.container{
 			font-size: 1.5em;
 			line-height: 1.2em;
 			color: white;
+			margin-bottom: 30px;
 
 			&:hover {
-				color: black;
+				text-decoration: underline;
 			}
 		}
 
@@ -81,7 +97,7 @@ footer.container{
 			margin-bottom: 30px;
 
 			&:hover {
-				color: black;
+				text-decoration: underline;
 			}
 		}
 	}
