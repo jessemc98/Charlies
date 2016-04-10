@@ -1,11 +1,24 @@
 footer.container{
-	background-color: $grey;
 	width: 100%;
 	max-width: 100%;
 	margin: 0;
 	box-sizing: border-box;
 	padding: 0;
 }
+
+/* Set Background image for footer */
+footer.container{
+	background-color: $grey;
+	background-image: url("../images/footer_bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+@media (max-width: 380px) {
+	footer.container {
+		background-size: 100% 100%;
+	}
+}//
 
 /* Hides the footer-nav on mobile (< 550px) */
 #footer-nav {
@@ -48,13 +61,16 @@ footer.container{
 			padding: 5px 5px;
 			border-left: 1px solid white;
 			margin-left: 0;
-
+			width: 4.5em;
+			background-color: $grey;
+			opacity: 0.6;
+			transition: all 0.2s;
+			
 			&:hover {
 				box-shadow: 0 1px 5px $black;
 				width: 6em;
+				opacity: 1;
 			}
-			transition: all 0.2s;
-
 		}
 
 		a {
@@ -62,7 +78,7 @@ footer.container{
 			color: white;
 		}
 	}
-}
+}/*end of @media (min-width: 550px)*/
 
 #footer-contact {
 	padding-top: 1em;
@@ -83,6 +99,7 @@ footer.container{
 			font-size: 1.5em;
 			line-height: 1.2em;
 			color: white;
+			transition: all 1s;
 
 			& svg {
 				position: absolute;
@@ -102,9 +119,15 @@ footer.container{
 			line-height: 0.9em;
 			color: white;
 			margin-bottom: 30px;
+			transition: all 1s;
 
 			&:hover {
 				text-decoration: underline;
+				
+				svg {
+					width: 1em;
+					path{fill: rgb(58,87,149);}
+				}
 			}
 
 			& svg {
@@ -114,6 +137,7 @@ footer.container{
 				width: 0.5em;
 				top: 0;
 				transform: translate(0, -45%);
+				fill: #D9E5FF;
 			}
 		}
 	}
