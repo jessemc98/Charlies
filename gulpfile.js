@@ -45,7 +45,7 @@ function bundle() {
       'BROWSERIFY ERROR:' +
       '\n*********************************** \n\n'
       )))
-    .pipe(source('main.js'))
+    .pipe(source('main.min.js'))
     // optional, remove if you don't need to buffer file contents
     .pipe(buffer())
     .pipe(uglify())
