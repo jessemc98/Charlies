@@ -1,9 +1,15 @@
 main {
 	text-align: center;
-
-	// & :first-child {
-	// 	margin-bottom: 0.3em;
-	// }
+	
+	#main-quote {
+		:first-child {
+			margin-bottom: 0.2em;
+			font-size: 1.2em;
+		}
+		p {
+			margin-bottom: 1em;
+		}
+	}
 }
 
 
