@@ -6,5 +6,9 @@
 @import "imgContainer";
 @import "skewbox";
 @import "footer";
+
+// page specific styles 
+// !!should not be here but will do for development!!
 @import "index";
 @import "about";
+@import "contact";
