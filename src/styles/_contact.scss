@@ -14,3 +14,20 @@ header.contact {
 		margin: auto 1em;
 	}
 }
+
+#about-content, #contact-aside {
+	padding: 10px 20px;
+	max-width: 900px;
+}
+
+@media (min-width: 750px) {
+
+	main.contact {
+		max-width: 960px;
+		&::before {
+			content: " ";
+			height: 250px;
+			display: block;
+		}
+	}
+}
