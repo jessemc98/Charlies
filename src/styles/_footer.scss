@@ -163,3 +163,18 @@ footer.container{
     text-align: center;
     font-size: 0.5em;
 }
+
+/* ensure footer sticks to bottom  */
+/* if main content is too short    */
+html, body {
+	height: 100%;
+}
+
+main {
+	min-height: 100%;
+	height: auto !important; /* this line is only for browsers < ie6 */
+	margin: 0 auto -190px; /* the bottom margin is the negative value of the footer's height */
+}
+footer.container, .push {
+	height: 190px;
+}
