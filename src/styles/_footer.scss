@@ -170,7 +170,7 @@ html, body {
 	height: 100%;
 }
 
-main {
+div.na-footer {
 	min-height: 100%;
 	height: auto !important; /* this line is only for browsers < ie6 */
 	margin: 0 auto -190px; /* the bottom margin is the negative value of the footer's height */
