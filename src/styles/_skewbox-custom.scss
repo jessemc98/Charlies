@@ -1,0 +1,17 @@
+.skew-container {
+
+	&.makeup {
+		background-image: url("../images/makeup_large.jpg");
+		background-position: right;
+		background-size: auto 100%;
+		border: 0;
+	}
+
+	&.beauty {
+		background-image: url("../images/beauty_large.jpg");
+		background-position: left;
+		background-size: 60% auto;
+		border: 0;
+	}
+
+}
