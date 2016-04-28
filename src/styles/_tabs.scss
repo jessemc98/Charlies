@@ -50,18 +50,24 @@
 
 div.tab-content {
 	background-color: $grey;
-	height: 200px;
+	min-height: 250px;
 	padding-top: 1em;
 	color: white;
-}
 
-#placeholder {
-	position: absolute;
-	transform: translate(0, -100%);
-	width: 100%;
-	z-index: -1;
-	// & .tab-content {
-	// 	background-color: grey;
-	// }
+	p {
+		display: inline-block;
+		float: left;
+		padding-left: 1rem;
+	}
+	/* styles price tag */
+	p:last-of-type {
+		float: right;
+		padding-right: 1rem;
+	}
+	
+	/* clearfix */
+	div {
+		clear: both;
+		overflow: hidden;
+	}
 }
-
