@@ -60,6 +60,7 @@ div.tab-content {
 		display: inline-block;
 		float: left;
 		padding-left: 1rem;
+		background-color: $grey;
 	}
 	/* styles price tag */
 	p:last-of-type {
@@ -67,9 +68,19 @@ div.tab-content {
 		padding-right: 1rem;
 	}
 	
-	/* clearfix */
 	div {
+		/* clearfix */
 		clear: both;
 		overflow: hidden;
+		//
+		&:before {
+		    float: left;
+		    width: 0;
+		    white-space: nowrap;
+		    content:
+			 ". . . . . . . . . . . . . . . . . . . . "
+			 ". . . . . . . . . . . . . . . . . . . . "
+			 ". . . . . . . . . . . . . . . . . . . . "
+			 ". . . . . . . . . . . . . . . . . . . . "}
 	}
 }
