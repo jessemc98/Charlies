@@ -12,11 +12,14 @@
 	border-bottom: none;
 	margin-bottom: 0;
 	transform: skew(-10deg);
+	max-width: 18%;
+	padding-top: 1rem;
 	}
+
 
 .tab a {
 	font-size: 14px;
-	line-height: 2em; 
+	line-height: 1.5em; 
 	display: block; 
 	padding: 0 10px; 
 	outline: none;
@@ -40,17 +43,16 @@
 	font-weight: bold; 
 	}
 
-.tab-container .panel-container { 
-	background: #fff; 
-	border: solid #666 1px; 
-	padding: 10px; 
-	-moz-border-radius: 0 4px 4px 4px; 
-	-webkit-border-radius: 0 4px 4px 4px;
+.tab-container, .panel-container {
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
 	}
 
 div.tab-content {
 	background-color: $grey;
 	min-height: 250px;
+	max-width: 1500px;
 	padding-top: 1em;
 	color: white;
 
