@@ -5,9 +5,9 @@ header.contact {
 		display: inline-block;
 	}
 	div {
-		display: inline-block;
-		width: 4em;
-		height: 5em;
+		display: none;
+		width: 3em;
+		height: 4em;
 		position: relative;
 		top: 2em;
 		margin: auto 1em;
@@ -22,11 +22,28 @@ header.contact {
 	padding: 10px 20px;
 	max-width: 900px;
 }
+@media (min-width: 294px) {
+	header.contact {
+		div {
+			display: inline-block;
+		}
+	}
+}
+
+@media (min-width: 324px) {
+	header.contact {
+		div {
+			width: 4em;
+			height: 5em;
+		}
+	}
+}
 
 @media (min-width: 750px) {
 
 	main.contact {
 		max-width: 960px;
+		margin: 0 auto;
 		&::before {
 			content: " ";
 			height: 250px;

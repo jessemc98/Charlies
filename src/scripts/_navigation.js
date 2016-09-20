@@ -44,7 +44,7 @@
 		var newWidth = window.innerWidth;
 		if (newWidth !== oldWidth) { //stops functiton running if resize wasnt horizontal
 			$close.hide();
-			if (newWidth >750) {
+			if (newWidth >= 750) {
 				$menu.show();
 			}
 			else {

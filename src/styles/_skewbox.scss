@@ -39,7 +39,7 @@
   box-shadow: -4px 0 6px 0 rgba(0,0,0,0.3);
   transform: skew(15deg);
   margin-right: -30%;
-  &:hover {
+  &.active, &:hover {
     left: 40%;
     article {
       right: 50%;
@@ -60,7 +60,7 @@
   box-shadow: 4px 0 6px 0 rgba(0,0,0,0.3);
   transform: skew(-15deg);
   margin-left: -30%;
-  &:hover {
+  &.active, &:hover {
     right: 40%;
     article {
       left: 50%;

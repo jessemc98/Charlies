@@ -10,9 +10,12 @@
 // custom styling
 @import "skewbox-custom";
 @import "tabs";
+@import "fonts";
 
 // page specific styles 
 // !!should not be here but will do for development!!
 @import "index";
 @import "about";
 @import "contact";
+@import "portfolio";
+@import "jbeauty";

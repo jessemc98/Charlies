@@ -1,0 +1,27 @@
+main.portfolio {
+	div.hiddensmall {
+		display: none;
+	}
+	img.img-container {
+		max-width: 960px;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+
+	}
+}
+
+@media (min-width: 600px) {
+	main.portfolio {
+		div.hiddensmall {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 750px) {
+	main.portfolio {
+		img.img-container {
+			margin-top: 2rem;
+		}
+	}
+}
