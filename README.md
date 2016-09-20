@@ -1,4 +1,4 @@
-# Charlie's Tavern Website
+# JBeauty Website
 
 running a gulpy build system
 
